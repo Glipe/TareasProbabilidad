@@ -1,0 +1,44 @@
+[gd_scene load_steps=2 format=3 uid="uid://xgmahxya3qnn"]
+
+[ext_resource type="Script" uid="uid://c4bg2oxuqj0m7" path="res://T2_Triangulo/TrinaguloBehavior.gd" id="1_2ba6j"]
+
+[node name="Triangulo" type="Node2D"]
+
+[node name="Fig1" type="Node2D" parent="."]
+position = Vector2(577, 325)
+script = ExtResource("1_2ba6j")
+per_ancho = 10.0
+iteraciones = 100000
+radio_fig = 300.0
+fuerza_densidad_carga = Vector2(0.55, 1.5)
+ancho_punto = 1.0
+
+[node name="Fig2" type="Node2D" parent="." node_paths=PackedStringArray("perimetro")]
+visible = false
+position = Vector2(577, 325)
+script = ExtResource("1_2ba6j")
+perimetro = NodePath("Line2D")
+per_ancho = 10.0
+iteraciones = 30000
+radio_fig = 300.0
+cargar_dado = true
+fuerza_densidad_carga = Vector2(0.55, 1.5)
+ancho_punto = 1.5
+
+[node name="Line2D" type="Line2D" parent="Fig2"]
+points = PackedVector2Array(-166, 90, 289, -38, 158, -104, -63, -52, -166, 90)
+
+[node name="Fig3" type="Node2D" parent="." node_paths=PackedStringArray("perimetro")]
+visible = false
+position = Vector2(577, 325)
+script = ExtResource("1_2ba6j")
+perimetro = NodePath("Line2D")
+per_ancho = 10.0
+iteraciones = 30000
+radio_fig = 300.0
+cargar_dado = true
+fuerza_densidad_carga = Vector2(0.55, 1.5)
+ancho_punto = 1.5
+
+[node name="Line2D" type="Line2D" parent="Fig3"]
+points = PackedVector2Array(-57, 56, 239, -17, 265, -142, 101, -207, -81, 14)

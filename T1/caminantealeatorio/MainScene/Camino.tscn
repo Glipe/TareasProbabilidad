@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://blfkr6cw7syae"]
+
+[ext_resource type="Script" uid="uid://cw8vb0l8i45a7" path="res://MainScene/CentroBehavior.gd" id="1_myscg"]
+
+[node name="Camino" type="Node2D"]
+
+[node name="Centro" type="Node2D" parent="."]
+position = Vector2(586, 308)
+script = ExtResource("1_myscg")
+ancho_linea = 0.7
+tam_paso = 1.0
+frame_a_frame = false
+lineas_xframe = 1
