@@ -7,9 +7,8 @@
 [node name="Fig1" type="Node2D" parent="."]
 position = Vector2(577, 325)
 script = ExtResource("1_2ba6j")
-per_ancho = 5.0
-iteraciones = 100000
-n_vert = 5
+per_ancho = 3.0
+n_vert = 12
 radio_fig = 150.0
 cargar_dado = true
 fuerza_densidad_carga = Vector2(0.55, 1.5)
@@ -22,7 +21,8 @@ script = ExtResource("1_2ba6j")
 perimetro = NodePath("Line2D")
 per_ancho = 10.0
 iteraciones = 30000
-radio_fig = 300.0
+n_vert = 5
+radio_fig = 150.0
 cargar_dado = true
 fuerza_densidad_carga = Vector2(0.55, 1.5)
 ancho_punto = 1.5
